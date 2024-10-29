@@ -28,3 +28,8 @@ class Action:
     @name.setter
     def name(self, name: str) -> None:
         self._name = name
+def draw_triangle(self, position, color='green'):
+    x, y = position
+    points = [x, y, x + 10, y + 20, x - 10, y + 20]
+    self.canvas.create_polygon(points, fill=color)
+self.tool_menu.add_command(label="Add Triangle", command=self.activate_triangle_tool)
